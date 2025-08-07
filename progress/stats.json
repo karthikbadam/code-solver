@@ -1,0 +1,44 @@
+{
+  "created_at": "2024-01-01T00:00:00Z",
+  "last_updated": "2024-01-01T00:00:00Z",
+  "total_problems": 0,
+  "solved_problems": 0,
+  "solve_rate": 0.0,
+  "by_difficulty": {
+    "easy": {
+      "total": 0,
+      "solved": 0,
+      "solve_rate": 0.0
+    },
+    "medium": {
+      "total": 0,
+      "solved": 0,
+      "solve_rate": 0.0
+    },
+    "hard": {
+      "total": 0,
+      "solved": 0,
+      "solve_rate": 0.0
+    }
+  },
+  "by_topic": {},
+  "recent_activity": [],
+  "streak": {
+    "current": 0,
+    "longest": 0,
+    "last_activity": null
+  },
+  "time_spent": {
+    "total_minutes": 0,
+    "daily_goal": 60,
+    "this_week": 0
+  },
+  "milestones": {
+    "first_problem": null,
+    "problems_50": null,
+    "problems_100": null,
+    "all_easy": null,
+    "all_medium": null,
+    "all_hard": null
+  }
+}

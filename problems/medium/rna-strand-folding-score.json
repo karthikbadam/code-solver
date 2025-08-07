@@ -1,0 +1,79 @@
+{
+  "id": "rna-strand-folding-score",
+  "title": "RNA Strand Folding Score",
+  "difficulty": "medium",
+  "topics": [
+    "dynamic-programming",
+    "string",
+    "biology"
+  ],
+  "description": "In RNA biology, nucleotide sequences can fold and form base pairs. Given a string representing an RNA sequence containing only characters 'A', 'U', 'G', and 'C', calculate the maximum folding score. A folding score is calculated by the number of valid base pairs that can be formed under these rules:\n\n1. A can pair with U\n2. G can pair with C\n3. Each nucleotide can pair with at most one other nucleotide\n4. Base pairs cannot cross (if i-j and k-l are pairs, we cannot have i < k < j < l)\n\nReturn the maximum possible folding score.",
+  "examples": [
+    {
+      "input": "AUUGC",
+      "output": "2",
+      "explanation": "We can form 2 pairs: A-U at positions (0,1) and G-C at positions (3,4)"
+    },
+    {
+      "input": "GCAU",
+      "output": "1",
+      "explanation": "We can either pair G-C or A-U, but not both due to crossing rule. Maximum is 1 pair."
+    },
+    {
+      "input": "AAUU",
+      "output": "2",
+      "explanation": "Both A's can pair with U's without crossing: (0,2) and (1,3)"
+    }
+  ],
+  "constraints": [
+    "1 <= sequence.length <= 1000",
+    "sequence contains only 'A', 'U', 'G', and 'C'",
+    "sequence.length is even",
+    "Base pairs cannot cross"
+  ],
+  "hints": [
+    "Try thinking about the problem in terms of subproblems - what happens when you consider just a portion of the sequence?",
+    "Consider using a 2D DP array where dp[i][j] represents the maximum score for substring from index i to j",
+    "For each position i, try pairing it with positions j>i and recursively solve for the segments [i+1,j-1]"
+  ],
+  "follow_up": [
+    "Can you modify the solution to also return the actual base pairings?",
+    "What if we add additional scoring rules where G-C pairs score 3 points and A-U pairs score 2 points?"
+  ],
+  "test_cases": [
+    {
+      "input": "AUGCAU",
+      "expectedOutput": "2",
+      "description": "Basic case with multiple possible pairings"
+    },
+    {
+      "input": "GGGGCCCC",
+      "expectedOutput": "4",
+      "description": "Maximum possible pairing case"
+    },
+    {
+      "input": "AUUUAA",
+      "expectedOutput": "1",
+      "description": "Case where crossing would give wrong answer"
+    },
+    {
+      "input": "AC",
+      "expectedOutput": "0",
+      "description": "Minimum length case with no possible pairs"
+    },
+    {
+      "input": "GCAUGCAU",
+      "expectedOutput": "3",
+      "description": "Complex case testing optimal substructure"
+    }
+  ],
+  "metadata": {
+    "companies": [],
+    "frequency": "",
+    "acceptance_rate": "",
+    "leetcode_url": "",
+    "created_at": "2025-08-02T17:58:54.583254",
+    "updated_at": "2025-08-02T17:58:54.583288",
+    "generated_by": "claude"
+  }
+}

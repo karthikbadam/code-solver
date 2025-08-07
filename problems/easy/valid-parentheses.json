@@ -1,0 +1,23 @@
+{
+  "id": "valid-parentheses",
+  "title": "Valid Parentheses",
+  "difficulty": "easy",
+  "topics": [
+    "string",
+    "stack"
+  ],
+  "description": "",
+  "examples": [],
+  "constraints": [],
+  "hints": [],
+  "follow_up": [],
+  "test_cases": [],
+  "metadata": {
+    "companies": [],
+    "frequency": "",
+    "acceptance_rate": "",
+    "leetcode_url": "",
+    "created_at": "2025-08-02T12:56:39.190673",
+    "updated_at": "2025-08-02T12:56:39.190678"
+  }
+}

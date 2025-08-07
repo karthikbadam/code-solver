@@ -1,0 +1,32 @@
+{
+  "id": "",
+  "title": "",
+  "difficulty": "",
+  "topics": [],
+  "description": "",
+  "examples": [
+    {
+      "input": "",
+      "output": "",
+      "explanation": ""
+    }
+  ],
+  "constraints": [],
+  "hints": [],
+  "followUp": [],
+  "testCases": [
+    {
+      "input": "",
+      "expectedOutput": "",
+      "description": ""
+    }
+  ],
+  "metadata": {
+    "companies": [],
+    "frequency": "",
+    "acceptance_rate": "",
+    "leetcode_url": "",
+    "created_at": "",
+    "updated_at": ""
+  }
+}
