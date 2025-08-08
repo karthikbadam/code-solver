@@ -1,4 +1,4 @@
-# LeetCode Practice Repository
+# Coding Practice Repository
 
 A comprehensive practice environment for LeetCode-style problems with Python and React/TypeScript support, featuring Claude AI integration for learning assistance.
 
